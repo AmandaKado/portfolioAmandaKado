@@ -660,6 +660,18 @@ footer .rodapeSite .estrelaEnfeite {
     main {
         margin-top: 90px;
     }
+
+    h2 {
+        font-size: 1.7em;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 16px;
+    }
     
     /* CABEÇALHO */
 
@@ -714,9 +726,8 @@ footer .rodapeSite .estrelaEnfeite {
         text-align: left;
     }
 
-    main #sobre p {
-        font-size: 1.5em;
-        text-align: left;
+    body .divisoria {
+        width: 900px;
     }
 
     .containerSobreMim {
@@ -757,26 +768,40 @@ footer .rodapeSite .estrelaEnfeite {
         width: 40px;
     }
 
-    #tituloh2SobreMim {
-        font-size: 2em;
-    }
-
-    #sobre p.textoSobre {
-        font-size: 1.2em;
-        margin: 0 60px 60px 120px;
+    .textoSobre {
+        padding: 0px 90px;
     }
 
     /* (MAIN) EDUCAÇÃO */
 
     #educacao {
-        display: flex;
-        flex-direction: column;
         width: 900px;
+        padding: 0;
     }
 
     #educacaoIcone {
         width: 40px;
         height: auto;
+    }
+
+    .container {
+        padding: 60px 60px 0px 60px;
+    }
+
+    .containerEducacao {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        padding: 0 120px 120px 120px;
+    }
+
+    .cursos {
+        flex: 1;
+        flex-wrap: wrap;
+    }
+
+    .idiomas {
+        padding: 0px 60px;
     }
 
 }
