@@ -804,4 +804,22 @@ footer .rodapeSite .estrelaEnfeite {
         padding: 0px 60px;
     }
 
+    /* (MAIN) PROJETOS */
+
+    #portfolio {
+        width: 900px;
+        padding: 0px;
+    }
+
+    #portfolio .container {
+        margin: 30px 60px 0px 60px;
+        padding: 0;
+    }
+
+    #iconeProjeto {
+        width: 40px;
+        height: auto; 
+    }
+
+
 }
