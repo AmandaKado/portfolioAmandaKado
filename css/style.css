@@ -749,19 +749,34 @@ footer .rodapeSite .estrelaEnfeite {
         margin: 70px 0 0 0;
     }
 
-    .containerSobreMim .tituloSobreMim img {
+    .tituloSobreMim {
+        padding-left: 120px;
+    }
+
+    #iconeSobreMim {
         width: 40px;
-        margin-right: 15px;
     }
 
     #tituloh2SobreMim {
         font-size: 2em;
-        margin: 0 0 30px 120px;
     }
 
     #sobre p.textoSobre {
         font-size: 1.2em;
         margin: 0 60px 60px 120px;
+    }
+
+    /* (MAIN) EDUCAÇÃO */
+
+    #educacao {
+        display: flex;
+        flex-direction: column;
+        width: 900px;
+    }
+
+    #educacaoIcone {
+        width: 40px;
+        height: auto;
     }
 
 }
