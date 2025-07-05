@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-/* DEFINIÇÃO DE VARIÁVEIS */
-
 :root {
     --roxo1: #FCF2FF;
     --roxo2: #DBC1F6;
@@ -11,12 +9,9 @@
     --roxo6: #827AB5;
     --roxo7: #250E2B;
     --roxo8: #100014;
-
     --tituloPrincipal: 'Pacifico';
     --textoComum: "Roboto Mono", monospace;
 }
-
-/* CONFIGURAÇÕES GERAIS CELULAR */
 
 * {
     margin: 0;
@@ -36,20 +31,19 @@ h1 {
     font-family: var(--tituloPrincipal);
 }
 
-h2, h3  {
+h2, h3, h4 {
     font-family: var(--textoComum);
-    font-size: 1.5em;
     color: var(--roxo8);
     font-weight: bold;
     text-align: left;
 }
 
+h2, h3 {
+    font-size: 1.5em;
+}
+
 h4 {
-    font-family: var(--textoComum);
     font-size: 1.2em;
-    color: var(--roxo8);
-    font-weight: bold;
-    text-align: left;
 }
 
 p {
@@ -73,16 +67,16 @@ a#botaoVoltarAoTopo {
     transition: background-color 0.3s ease-in-out;
 }
 
-a#botaoVoltarAoTopo img{
+a#botaoVoltarAoTopo:hover {
+    background-color: rgba(183, 164, 228, 0.384);
+}
+
+a#botaoVoltarAoTopo img {
     width: 20px;
     height: 20px;
     bottom:25px;
     right: 25px;
     transition: background-color 0.3s ease-in-out;
-}
-
-a#botaoVoltarAoTopo:hover{
-    background-color: rgba(183, 164, 228, 0.384);
 }
 
 .fadeInElemento {
@@ -96,8 +90,6 @@ a#botaoVoltarAoTopo:hover{
     transform: translateY(0);
 }
 
-/* CABEÇALHO */
-
 header {
     background: rgba(42, 31, 68, 0.8) url('../media/backgroundBody.jpg') center / cover;
     backdrop-filter: blur(10px); 
@@ -110,6 +102,13 @@ header {
     text-align: center;
 }
 
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 30px;
+}
+
 ul li a {
     display: block;
     font-family: var(--textoComum);
@@ -119,29 +118,22 @@ ul li a {
     text-decoration: none;
 }
 
-nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 30px;
+#menuHamburguer, #fecharMenu {
+    background: none;
+    border: none;
 }
 
 #menuHamburguer {
     display: block;
-    background: none;
-    border: none;
     cursor: pointer;
+}
+
+#linksNavegacao, #fecharMenu {
+    display: none;
 }
 
 #linksNavegacao {
-    display: none;
     cursor: pointer;
-}
-
-#fecharMenu {    
-    display: none;
-    background: none;
-    border: none;
 }
 
 #menuHamburguer img, #fecharMenu img {
@@ -158,12 +150,6 @@ nav {
     width: 90vw;
     transition: transform 0.3s ease-in-out;
 }
-nav.menuAberto #linksNavegacao li:hover {
-    background-color: rgba(219, 193, 246, 0.50);
-    width: 90vw;
-    transform: scale(1.02);
-    cursor: pointer;
-}
 
 nav.menuAberto {
     position: fixed;
@@ -172,12 +158,19 @@ nav.menuAberto {
     width: 100%;
     height: auto; 
     background: rgba(42, 31, 68, 0.8) url('../media/backgroundBody.jpg') center / cover;
-    backdrop-filter: blur(10px);     
+    backdrop-filter: blur(10px);      
     padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+nav.menuAberto #linksNavegacao li:hover {
+    background-color: rgba(219, 193, 246, 0.50);
+    width: 90vw;
+    transform: scale(1.02);
+    cursor: pointer;
 }
 
 nav.menuAberto #menuHamburguer {
@@ -193,8 +186,6 @@ nav.menuAberto #linksNavegacao li.ativo {
     background-color: rgba(219, 193, 246, 0.50);
 }
 
-/* MAIN */
-
 main {
     margin-top: 60px;
 }
@@ -203,17 +194,11 @@ main span {
     font-weight: bold;
 }
 
-main .divisoria{
+main .divisoria {
     width: 100%;
     height: 30px;
-    background: linear-gradient(
-        to right, 
-        var(--roxo8),
-        var(--roxo7)
-    );
+    background: linear-gradient( to right, var(--roxo8), var(--roxo7) );
 }
-
-/* (MAIN) SOBRE */
 
 #sobre .estrelaEnfeite {
     margin: 30px 30px 0 30px;
@@ -222,19 +207,13 @@ main .divisoria{
 main #sobre {
     position: relative;
     z-index: -2;
-    background: linear-gradient(
-        to bottom, 
-        var(--roxo2),
-        var(--roxo1),
-        var(--roxo1),
-        var(--roxo1)
-    );
+    background: linear-gradient( to bottom, var(--roxo2), var(--roxo1), var(--roxo1), var(--roxo1) );
 }
 
 main #sobre .divisoriaSobre {
     width: 100%;
     position: absolute;
-    top: 380px;
+    top: 400px;
     z-index: -1;
 }
 
@@ -263,9 +242,8 @@ main #sobre p {
 }
 
 .fotoPerfil {
-    margin: 30px;
     width: 100%;
-    max-width: 400px;
+    max-width: 350px;
     height: auto;
     border-radius: 10px 100px;
     padding: 5px;
@@ -298,20 +276,14 @@ main #sobre p {
 
 #sobre p.textoSobre {
     font-weight: normal;
-    margin: 0 30px 30px 30px;
+    margin: 0 20px 60px 20px;
     text-align: left;
 }
-
-/* (MAIN) EDUCACAO */
 
 #educacao {
     width: 100%;
     padding:  30px 30px 60px 30px;
-    background: linear-gradient(
-        to left, 
-        var(--roxo3),
-        var(--roxo2)
-    );
+    background: linear-gradient( to left, var(--roxo3), var(--roxo2) );
 }
 
 #educacao .estrelaEnfeite {
@@ -324,7 +296,7 @@ main #sobre p {
     justify-content: space-between;
 }
 
-.container #educacaoIcone  {
+.container .icone-titulo  {
     width: 30px;
     height: auto;
     margin-right: 15px;
@@ -349,29 +321,17 @@ main #sobre p {
     margin: 15px auto;
 }
 
-/* (MAIN) Projetos */
-
 #portfolio {
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 30px;
-    background: linear-gradient(
-        to bottom, 
-        var(--roxo1),
-        var(--roxo2)
-    );
+    background: linear-gradient( to bottom, var(--roxo1), var(--roxo2) );
 }
 
 #portfolio h2 {
     padding: 30px 0;
     text-align: left;
-}
-
-#iconeProjeto {
-    width: 30px;
-    height: auto;
-    margin-right: 15px;
 }
 
 .cartaoProjeto {
@@ -395,11 +355,10 @@ main #sobre p {
     cursor: pointer;
 }
 
-.cartaoProjeto  h3, p {
+.cartaoProjeto h3, .cartaoProjeto p {
     text-align: left;
     color: var(--roxo8);
 }
-
 
 .cartaoProjeto img {
     width: 100%;
@@ -407,8 +366,6 @@ main #sobre p {
     margin: 15px 0;
     border-radius: 10px;    
 }
-
-/* (MAIN) CONTATO */
 
 #contato {
     width: 100%;
@@ -420,19 +377,8 @@ main #sobre p {
     padding: 30px 0;
 }
 
-#iconeContato {
-    width: 30px;
-    height: auto;
-    margin-right: 15px;
-}
-
 .formularioContato {
-    background: 
-    linear-gradient(
-        to bottom, 
-        var(--roxo2),
-        var(--roxo3)
-    );
+    background: linear-gradient( to bottom, var(--roxo2), var(--roxo3) );
     border-radius: 10px;
     padding: 30px;
 }
@@ -463,7 +409,6 @@ main #sobre p {
     background-color: var(--roxo1);
     margin-bottom: 15px;
 }
-
 
 .grupoFormulario input:focus,
 .grupoFormulario textarea:focus {
@@ -508,18 +453,12 @@ main #sobre p {
     cursor: pointer;
 }
 
-/* FOOTER */
-
 footer {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(
-        to bottom, 
-        var(--roxo2),
-        var(--roxo5)
-    );
+    background: linear-gradient( to bottom, var(--roxo2), var(--roxo5) );
     backdrop-filter: blur(10px);
     padding: 30px;
 }
@@ -536,8 +475,6 @@ footer .rodapeSite .estrelaEnfeite {
     margin: 0 15px;
 }
 
-/* KEYFRAMES */
-
 @keyframes piscar {
     0%, 100% {
         opacity: 1; 
@@ -548,8 +485,6 @@ footer .rodapeSite .estrelaEnfeite {
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
-
-    /* CONFIGURAÇÕES GERAIS TABLET */
 
     body #botaoVoltarAoTopo{
         width: 60px;
@@ -581,8 +516,6 @@ footer .rodapeSite .estrelaEnfeite {
         height: 60px;
     }
 
-    /* CABEÇALHO */
-
     #menuHamburguer img, #fecharMenu img {
         width: 40px;
     }
@@ -590,8 +523,6 @@ footer .rodapeSite .estrelaEnfeite {
     ul li a {
         font-size: 1.8em;
     }
-
-    /* (MAIN) SOBRE */
 
     main {
         margin-top: 30px;
@@ -616,38 +547,24 @@ footer .rodapeSite .estrelaEnfeite {
         padding: 60px 60px 0px 60px;
     }
 
-    /* (MAIN) EDUCACAO */
-
     #educacao {
         padding: 60px 90px;
     }
 
-    .container #educacaoIcone  {
+    .container .icone-titulo  {
         width: 60px;
     }
-
-    /* (MAIN) Projetos */
 
     #portfolio {
         padding: 60px 90px;
     }
 
-    #iconeProjeto {
-        width: 60px;
-    }
-
     .cartaoProjeto {
-        width: 100vw;
+        width: 100%;
     }
-
-    /* (MAIN) CONTATO */
 
     #contato {
         padding: 60px 90px;
-    }
-
-    #iconeContato {
-        width: 60px;
     }
 
     .iconeRedesSociais {
@@ -658,31 +575,36 @@ footer .rodapeSite .estrelaEnfeite {
     .rodapeSite {
         width: 100%;
     }
-
 }
 
 @media (min-width: 1200px) {
-
-    /* CONFIGURAÇÕES GERAIS DESKTOP */
-
     main {
-        margin-top: 90px;
+        margin-top: 60px;
+    }
+    
+    main #sobre,
+    body .divisoria,
+    #educacao,
+    #portfolio,
+    #contato,
+    .rodapeSite {
+        width: 900px;
+    }
+
+    #educacao,
+    #portfolio,
+    #contato {
+        padding: 0;
     }
 
     h2 {
         font-size: 1.7em;
     }
 
-    h4 {
-        font-size: 16px;
-    }
-
-    p {
+    h4, p {
         font-size: 16px;
     }
     
-    /* CABEÇALHO */
-
     #menuHamburguer,
     #fecharMenu {
         display: none !important;
@@ -717,16 +639,6 @@ footer .rodapeSite .estrelaEnfeite {
         color: var(--roxo7);
     }
 
-    /* (MAIN) SOBRE */
-
-    main {
-        margin-top: 60px;
-    }
-
-    main #sobre {
-        width: 900px;
-    }
-
     main #sobre .divisoriaSobre {
         width: 100%;
         height: 30px;
@@ -736,10 +648,6 @@ footer .rodapeSite .estrelaEnfeite {
     main #sobre h1 {
         font-size: 4em;
         text-align: left;
-    }
-
-    body .divisoria {
-        width: 900px;
     }
 
     .containerSobreMim {
@@ -776,26 +684,13 @@ footer .rodapeSite .estrelaEnfeite {
         padding-left: 120px;
     }
 
-    #iconeSobreMim {
+    .tituloSobreMim .icone-titulo {
         width: 40px;
     }
 
-    #sobre .textoSobre p {
-        padding: 120px;
-    }
-
-    }
-
-    /* (MAIN) EDUCAÇÃO */
-
-    #educacao {
-        width: 900px;
-        padding: 0;
-    }
-
-    #educacaoIcone {
-        width: 40px;
-        height: auto;
+    #sobre p.textoSobre {
+        padding: 0 120px 120px 120px;
+        margin: 0;
     }
 
     .container {
@@ -818,21 +713,9 @@ footer .rodapeSite .estrelaEnfeite {
         padding: 0px 60px;
     }
 
-    /* (MAIN) PROJETOS */
-
-    #portfolio {
-        width: 900px;
-        padding: 0px;
-    }
-
     #portfolio .container {
         margin: 30px 60px 0px 60px;
         padding: 0;
-    }
-
-    #iconeProjeto {
-        width: 40px;
-        height: auto; 
     }
 
     #portfolio .cartoesFlex {
@@ -843,29 +726,20 @@ footer .rodapeSite .estrelaEnfeite {
     }
 
     .cartaoProjeto {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    height: 400px;
-    transform: scale(0.9); 
-    transition: all 0.3s ease-in-out; 
-    cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        height: 400px;
+        transform: scale(0.9); 
+        transition: all 0.3s ease-in-out; 
+        cursor: pointer;
     }
 
     .cartaoProjeto:hover {
         background-color: var(--roxo6);
         transform: scale(1); 
     }
-
-    #contato {
-        width: 900px;
-        padding: 0;
-    }
-
-    #iconeContato {
-        width: 40px;
-    }
-
+    
     #contato p {
         padding: 30px 120px;
     }
@@ -874,10 +748,4 @@ footer .rodapeSite .estrelaEnfeite {
         width: 100%;
         padding: 0 120px;
     } 
-
-    /* FOOTER */
-
-    .rodapeSite {
-        width: 900px;
-    }
 }
