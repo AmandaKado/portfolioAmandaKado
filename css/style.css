@@ -825,27 +825,22 @@ footer .rodapeSite .estrelaEnfeite {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 10px;
-        padding: 30px;
+        padding: 0px 30px;
     }
 
     .cartaoProjeto {
-    width: 30%;
-    max-width: 280px;
-    opacity: 0.6; 
-    transform: scale(0.85); 
-    transition: all 0.4s ease-in-out; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 400px;
+    transform: scale(0.9); 
+    transition: all 0.3s ease-in-out; 
     cursor: pointer;
 }
 
-    .cartaoProjeto.destaque {
-        opacity: 1; 
-        transform: scale(1); 
-        z-index: 10;
-    }
-
     .cartaoProjeto:hover {
-        background-color: var(--roxo5); 
+        background-color: var(--roxo6);
+        transform: scale(1); 
     }
 
 
