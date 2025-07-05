@@ -3,48 +3,49 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Portfólio | Amanda Mayumi Kado</title>
+    <meta charset="UTF-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
 
+    <title>Portfólio | Amanda Mayumi Kado</title> <!-- Título da aba -->
+
+    <!-- Importação de fontes do Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet" />
+    
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
+    
     <header>
         <nav>
+            <!-- Botão de abrir o menu hamburguer -->
             <button id="menuHamburguer" aria-label="Abrir Menu">
                 <img id="iconeMenuHamburguer" src="media/menuHamburguer.png" alt="Menu hamburguer"/>
             </button>
 
+            <!-- Lista de navegação -->
             <ul id="linksNavegacao">
-                <li>
-                    <a href="#sobre" class="itemNavegacao">Sobre Mim</a>
-                </li>
-                <li>
-                    <a href="#educacao" class="itemNavegacao">Educação</a>
-                </li>
-                <li>
-                    <a href="#portfolio" class="itemNavegacao">Portfólio</a>
-                </li>
-                <li>
-                    <a href="#contato" class="itemNavegacao">Contato</a>
-                </li>
+                <li><a href="#sobre" class="itemNavegacao">Sobre Mim</a></li>
+                <li><a href="#educacao" class="itemNavegacao">Educação</a></li>
+                <li><a href="#portfolio" class="itemNavegacao">Portfólio</a></li>
+                <li><a href="#contato" class="itemNavegacao">Contato</a></li>
             </ul>
 
+            <!-- Botão de fechar menu em mobile -->
             <button id="fecharMenu" aria-label="Fechar Menu">
                 <img src="media/fecharMenu.png" alt="Ícone de fechar o menu" />
             </button>
         </nav>
     </header>
 
+    <!-- Conteúdo principal -->
     <main>
+        <!-- Seção Sobre Mim -->
         <section id="sobre">
             <div class="divisoria divisoriaSobre"></div>
 
@@ -58,34 +59,31 @@
                     <p class="subtitulo">Dev. Amanda Kado</p>
                 </div>
 
+                <!-- Foto de perfil -->
                 <img src="media/perfilFoto.jpg" alt="Foto de Amanda Mayumi Kado" class="fotoPerfil" />
 
+                <!-- Título da seção sobre mim -->
                 <div class="fadeInElemento tituloSobreMim">
                     <img id="iconeSobreMim" src="media/estrelaIcone.png" alt="Estrela Icone Sobre mim" />
                     <h2 id="tituloh2SobreMim">Sobre mim</h2>
                 </div>
 
+                <!-- Texto de apresentanção -->
                 <p class="textoSobre fadeInElemento">
                     <span>Olá! Bem-vindo ao meu Portfólio.</span> Meu nome é
                     <span>Amanda Mayumi Kado</span> e tenho <span>24 anos</span>.
-                    <br />
-                    <br />
+                    <br /><br />
                     <span>Meu interesse em tecnologia surgiu quando criança!</span>
-                    Jogava em computadores de tubo, que só rodavam jogos como Paciência
-                    e Mahjong. Eu adorava estar no computador por várias horas seguidas,
-                    <span>me perguntando como tudo funcionava</span>. Hoje foco em
-                    aprimorar minhas habilidades em tecnologias como
-                    <span>JavaScript, HTML, CSS, Java, Python e SQL</span>. Meu objetivo
-                    é me tornar uma desenvolvedora <span>Full Stack</span> de qualidade.
-                    <br />
-                    <br />
-                    Quando não estou estudando ou programando, aproveito o tempo livre
-                    para jogar. Adoro jogos de <span>mundo aberto</span> com várias
-                    opções de escolhas, e também jogos <span>Soulslike</span>.
+                    Jogava em computadores antigos e adorava entender como funcionavam.
+                    Atualmente estudo <span>JavaScript, HTML, CSS, Java, Python e SQL</span>.
+                    Meu objetivo é me tornar uma desenvolvedora <span>Full Stack</span>.
+                    <br /><br />
+                    Também sou apaixonada por jogos de <span>mundo aberto</span> e <span>Soulslike</span>.
                 </p>
             </div>
         </section>
 
+        <!-- Seção Educação -->
         <section id="educacao">
             <div class="container">
                 <div class="fadeInElemento container">
@@ -97,33 +95,32 @@
                 </div>
             </div>
 
+            <!-- Cursos e Idiomas -->
             <div class="containerEducacao fadeInElemento">
                 <div class="cursos">
                     <h3>Cursos</h3>
 
-                    <div class="itemCurso">
-                        <h4>Análise e Desenvolvimento de Sistemas</h4>
-                        <p>Centro Universitário Internacional UNINTER</p>
-                        <p>2024 - Atualmente</p>
+                    <h4>Análise e Desenvolvimento de Sistemas</h4>
+                    <p>Centro Universitário Internacional UNINTER</p>
+                    <p>2024 - Atualmente</p>
 
-                        <div></div>
+                    <div></div>
 
-                        <h4>UI Design para Iniciantes</h4>
-                        <p>Origamid</p>
-                        <p>(Concluído)</p>
+                    <h4>UI Design para Iniciantes</h4>
+                    <p>Origamid</p>
+                    <p>(Concluído)</p>
 
-                        <div></div>
+                    <div></div>
 
-                        <h4>JavaScript Completo ES6</h4>
-                        <p>Origamid</p>
-                        <p>(Concluído)</p>
+                    <h4>JavaScript Completo ES6</h4>
+                    <p>Origamid</p>
+                    <p>(Concluído)</p>
 
-                        <div></div>
+                    <div></div>
 
-                        <h4>Lógica de Programação</h4>
-                        <p>Curso em Vídeo</p>
-                        <p>(Concluído)</p>
-                    </div>
+                    <h4>Lógica de Programação</h4>
+                    <p>Curso em Vídeo</p>
+                    <p>(Concluído)</p>
                 </div>
 
                 <div class="idiomas">
@@ -139,6 +136,7 @@
 
         <div class="divisoria"></div>
 
+        <!-- Seção de Projetos -->
         <section id="portfolio">
             <div class="container">
                 <div class="fadeInElemento container">
@@ -150,27 +148,27 @@
                 </div>
             </div>
 
+            <!-- Cartões com os projetos -->
             <div class="fadeInElemento cartoesFlex">
+                <!-- Projeto 1 -->
                 <div class="cartaoProjeto">
                     <a href="https://amandakado.github.io/gerador-personalizado/" target="_blank" rel="noopener noreferrer">
                         <h3>Gerador de Link de WhatsApp:</h3>
                         <img src="media/imagemGerador.png" alt="Projeto de Gerador de Link Wallpaper" />
-                        <p>
-                            Esse site foi criado com intuito de gerar links para o WhatsApp
-                        </p>
+                        <p>Esse site foi criado com intuito de gerar links para o WhatsApp</p>
                     </a>
                 </div>
 
+                <!-- Projeto 2 -->
                 <div class="cartaoProjeto">
                     <a href="https://amandakado.github.io/projeto-cordel/" target="_blank" rel="noopener noreferrer">
                         <h3>Projeto Cordel</h3>
                         <img src="media/imagemCordel.png" alt="Projeto de Cordel" />
-                        <p>
-                            Site simples desenvolvido no Curso em Vídeo! Mostra um cordel.
-                        </p>
+                        <p>Site simples desenvolvido no Curso em Vídeo! Mostra um cordel.</p>
                     </a>
                 </div>
 
+                <!-- Projeto 3 -->
                 <div class="cartaoProjeto">
                     <a href="https://amandakado.github.io/projetoWallpaper/" target="_blank" rel="noopener noreferrer">
                         <h3>Projeto de Download Wallpaper</h3>
@@ -181,6 +179,7 @@
             </div>
         </section>
 
+        <!-- Seção Contato -->
         <section id="contato">
             <div class="container">
                 <div class="fadeInElemento container">
@@ -192,33 +191,39 @@
                 </div>
             </div>
 
+            <!-- Texto de introdução ao formulário -->
             <p class="fadeInElemento">
-                Gostou do meu trabalho? Tem alguma pergunta ou quer trabalhar junto
-                comigo? Preencha o formulário abaixo.
+                Gostou do meu trabalho? Tem alguma pergunta ou quer trabalhar junto comigo? Preencha o formulário abaixo.
             </p>
 
+            <!-- Formulário de contato -->
             <div class="containerContato fadeInElemento">
                 <form class="formularioContato" action="https://formspree.io/f/mqabjvry" method="POST">
                     <h3 id="tituloContatos">Entre em Contato</h3>
 
+                    <!-- Campo nome -->
                     <div class="grupoFormulario">
                         <label for="nome">Seu Nome Completo</label>
                         <input type="text" id="nome" name="nome" placeholder="Ex.: Nome Sobrenome" required />
                     </div>
 
+                    <!-- Campo e-mail -->
                     <div class="grupoFormulario">
                         <label for="email">Seu Melhor Email</label>
                         <input type="email" id="email" name="email" placeholder="seunome@email.com" required />
                     </div>
 
+                    <!-- Campo mensagem -->
                     <div class="grupoFormulario">
                         <label for="mensagem">Deixe sua Mensagem</label>
                         <textarea id="mensagem" name="mensagem" rows="10"></textarea>
                     </div>
 
+                    <!-- Botão de envio -->
                     <button type="submit" class="botao">Enviar Mensagem</button>
                 </form>
 
+                <!-- Links das redes sociais -->
                 <div class="redesSociais">
                     <a href="https://github.com/AmandaKado" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
                         <img class="iconeRedesSociais" src="media/githubIcone.png" alt="Ícone do GitHub" />
@@ -226,7 +231,7 @@
                     <a href="https://www.instagram.com/a.m.kado?igsh=ZXN6ZDRlemdsamdy" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
                         <img class="iconeRedesSociais" src="media/instagramIcone.png" alt="Ícone do Instagram" />
                     </a>
-                    <a href="https://wa.me/47984186031?text=Oi% 20Amanda!%20Vi%20seu%20portf%C3%B3lio.%20"
+                    <a href="https://wa.me/47984186031?text=Oi%20Amanda!%20Vi%20seu%20portf%C3%B3lio.%20"
                         aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
                         <img class="iconeRedesSociais" src="media/whatsappIcone.png" alt="Icone do WhatsApp" />
                     </a>
@@ -240,21 +245,23 @@
         <div class="divisoria"></div>
     </main>
 
+    <!-- Rodapé do site -->
     <footer class="rodapeSite">
         <div class="estrelaEnfeite">
             <img src="media/estrelasCelular.png" />
         </div>
-
         <p class="textoCopyright">
             &copy; 2025 Amanda Mayumi Kado. Todos os direitos reservados.
         </p>
     </footer>
 
+    <!-- Botão flutuante para voltar ao topo -->
     <a href="#sobre" id="botaoVoltarAoTopo" aria-label="Voltar ao Topo">
         <img src="media/seta.png" alt="Seta de voltar ao topo" />
     </a>
 
     <script type="module" src="js/script.js"></script>
+    
 </body>
 
 </html>
