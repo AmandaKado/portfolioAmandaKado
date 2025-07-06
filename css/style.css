@@ -36,6 +36,16 @@ body {
     background: url('../media/backgroundSite.png'), linear-gradient(to bottom, var(--roxo7), var(--roxo6));
 }
 
+main {
+    margin-top: 60px;
+}
+
+main span {
+    font-weight: bold;
+}
+
+/* Configuração das fontes */
+
 h1 {
     font-family: var(--tituloPrincipal);
 }
@@ -116,6 +126,7 @@ header {
     text-align: center;
 }
 
+/* Configuração do menu */
 nav {
     display: flex;
     justify-content: flex-end;
@@ -201,14 +212,6 @@ nav.menuAberto #linksNavegacao li.ativo {
 }
 
 /*=== Seção sobre ===*/
-
-main {
-    margin-top: 60px;
-}
-
-main span {
-    font-weight: bold;
-}
 
 main .divisoria {
     width: 100%;
