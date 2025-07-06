@@ -19,7 +19,7 @@
 }
 
 
-/*=== Configurações gerais ===*/
+/*=== Configurações Mobile First ===*/
 
 /* Redefinindo margin, padding e box-sizing do site todo */
 * {
@@ -126,7 +126,7 @@ header {
     text-align: center;
 }
 
-/* Configuração do menu */
+/* Formatação do menu */
 nav {
     display: flex;
     justify-content: flex-end;
@@ -403,6 +403,8 @@ main #sobre p {
     padding: 30px 0;
 }
 
+/* Formatação do formulário */
+
 .formularioContato {
     background: linear-gradient( to bottom, var(--roxo2), var(--roxo3) );
     border-radius: 10px;
@@ -461,6 +463,8 @@ main #sobre p {
     transition: background-color 0.4s ease-in-out, color 0.3s ease-in-out;
 }
 
+/* Formatação dos ícones das redes sociais */
+
 .redesSociais {
     display: flex;
     justify-content: center;
@@ -514,7 +518,10 @@ footer .rodapeSite .estrelaEnfeite {
     }
 }
 
+/*=== Configurações para Tablet ===*/
+
 @media (min-width: 768px) and (max-width: 1199px) {
+
 
     body #botaoVoltarAoTopo{
         width: 60px;
@@ -606,6 +613,8 @@ footer .rodapeSite .estrelaEnfeite {
         width: 100%;
     }
 }
+
+/*=== Configurações para Desktop ===*/
 
 @media (min-width: 1200px) {
     main {
