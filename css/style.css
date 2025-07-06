@@ -1,6 +1,9 @@
-@charset "UTF-8";
+/* Define a codificação de caracteres como UTF-8 */
+@charset "UTF-8"; 
 
+/* Variáveis de cor e fontes */
 :root {
+    /* CORES */
     --roxo1: #FCF2FF;
     --roxo2: #DBC1F6;
     --roxo3: #C8A4F4;
@@ -9,15 +12,20 @@
     --roxo6: #827AB5;
     --roxo7: #250E2B;
     --roxo8: #100014;
+
+    /* FONTES */
     --tituloPrincipal: 'Pacifico';
     --textoComum: "Roboto Mono", monospace;
 }
 
+/* Redefinindo margin, padding e box-sizing do site todo */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Configurações gerais */
 
 body {
     display: flex;
@@ -51,6 +59,7 @@ p {
     font-size: 1.2em;
 }
 
+/* Configuração do botão para voltar ao topo */
 a#botaoVoltarAoTopo {
     display: flex;
     align-items: center;
@@ -79,6 +88,8 @@ a#botaoVoltarAoTopo img {
     transition: background-color 0.3s ease-in-out;
 }
 
+
+/* Configuração de efeito FadeIn */
 .fadeInElemento {
     opacity: 0;
     transform: translateY(20px);
@@ -89,6 +100,8 @@ a#botaoVoltarAoTopo img {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* Cabeçalho */
 
 header {
     background: rgba(42, 31, 68, 0.8) url('../media/backgroundBody.jpg') center / cover;
@@ -185,6 +198,8 @@ nav.menuAberto #fecharMenu {
 nav.menuAberto #linksNavegacao li.ativo {
     background-color: rgba(219, 193, 246, 0.50);
 }
+
+/* Parte principal do site (MAIN) */
 
 main {
     margin-top: 60px;
