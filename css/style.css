@@ -3,7 +3,7 @@
 
 /* Variáveis de cor e fontes */
 :root {
-    /* CORES */
+    /* cores */
     --roxo1: #FCF2FF;
     --roxo2: #DBC1F6;
     --roxo3: #C8A4F4;
@@ -13,10 +13,13 @@
     --roxo7: #250E2B;
     --roxo8: #100014;
 
-    /* FONTES */
+    /* fontes */
     --tituloPrincipal: 'Pacifico';
     --textoComum: "Roboto Mono", monospace;
 }
+
+
+/*=== Configurações gerais ===*/
 
 /* Redefinindo margin, padding e box-sizing do site todo */
 * {
@@ -24,8 +27,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-/* Configurações gerais */
 
 body {
     display: flex;
@@ -101,7 +102,7 @@ a#botaoVoltarAoTopo img {
     transform: translateY(0);
 }
 
-/* Cabeçalho */
+/*=== Cabeçalho ===*/
 
 header {
     background: rgba(42, 31, 68, 0.8) url('../media/backgroundBody.jpg') center / cover;
@@ -199,7 +200,7 @@ nav.menuAberto #linksNavegacao li.ativo {
     background-color: rgba(219, 193, 246, 0.50);
 }
 
-/* Parte principal do site (MAIN) */
+/*=== Seção sobre ===*/
 
 main {
     margin-top: 60px;
@@ -249,6 +250,7 @@ main #sobre p {
     padding: 0px 20px;
 }
 
+/* Simula cursor piscando */
 .subtitulo::after {
     content: '|';
     margin-left: 2px;
@@ -295,6 +297,8 @@ main #sobre p {
     text-align: left;
 }
 
+/*=== Seção educação ===*/
+
 #educacao {
     width: 100%;
     padding:  30px 30px 60px 30px;
@@ -335,6 +339,8 @@ main #sobre p {
     height: 2px;
     margin: 15px auto;
 }
+
+/*=== Seção projetos ===*/
 
 #portfolio {
     display: flex;
@@ -381,6 +387,8 @@ main #sobre p {
     margin: 15px 0;
     border-radius: 10px;    
 }
+
+/*=== Seção contato ===*/
 
 #contato {
     width: 100%;
@@ -468,6 +476,8 @@ main #sobre p {
     cursor: pointer;
 }
 
+/*=== Rodapé ===*/
+
 footer {
     display: flex;
     flex-direction: row-reverse;
@@ -489,6 +499,8 @@ footer .rodapeSite .estrelaEnfeite {
     height: auto;
     margin: 0 15px;
 }
+
+/*=== Animação de piscar o cursor ===*/
 
 @keyframes piscar {
     0%, 100% {
