@@ -350,7 +350,8 @@ main #sobre p {
     flex-direction: column;
     width: 100%;
     padding: 30px;
-    background: linear-gradient( to bottom, var(--roxo1), var(--roxo2) );
+    background: linear-gradient(to bottom, var(--roxo1), var(--roxo2));
+    overflow: hidden; 
 }
 
 #portfolio h2 {
@@ -358,38 +359,7 @@ main #sobre p {
     text-align: left;
 }
 
-.cartaoProjeto {
-    width: 100%;
-    max-width: 700px;
-    background-color: var(--roxo5);
-    border-radius: 10px 60px;
-    padding: 30px;
-    margin: 30px auto;
-}
 
-.cartaoProjeto:hover {
-    transform: scale(1.02);
-    background-color: var(--roxo6);
-    cursor: pointer;
-}
-
-.cartaoProjeto a {
-    text-decoration: none;
-    color: var(--roxo8);
-    cursor: pointer;
-}
-
-.cartaoProjeto h3, .cartaoProjeto p {
-    text-align: left;
-    color: var(--roxo8);
-}
-
-.cartaoProjeto img {
-    width: 100%;
-    height: auto;
-    margin: 15px 0;
-    border-radius: 10px;    
-}
 
 /*=== Seção contato ===*/
 
