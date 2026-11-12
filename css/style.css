@@ -277,7 +277,7 @@ main #sobre p {
     justify-content: flex-start;
     color: var(--roxo7);
     padding: 0px 30px 30px 30px;
-    width: 100vw;
+    width: 100%;
 }
 
 .tituloSobreMim img {
@@ -295,7 +295,6 @@ main #sobre p {
 }
 
 #sobre p.textoSobre {
-    width: 100vw;
     font-weight: normal;
     margin: 0 20px 60px 20px;
     text-align: left;
@@ -313,7 +312,7 @@ main #sobre p {
     margin: 0;
 }
 
-#educacao .container {
+.container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -360,50 +359,7 @@ main #sobre p {
     text-align: left;
 }
 
-.setas {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
 
-.btnNav {
-    margin: 0 30px;
-    border: none;
-    background: none;
-    transition: transform 0.3s ease-in-out;
-}
-
-.btnNav:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-}
-
-.cartoesFlex {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    gap: 30px;
-    padding-bottom: 30px;
-}
-
-.cartaoProjeto {
-    width: 400px;
-    background-color: var(--roxo4);
-    border-radius: 10px 40px;
-    padding: 30px;
-    text-align: center;
-}
-
-.cartaoProjeto h3 {
-    font-size: 1.2em;
-    text-decoration: none;
-    color: var(--roxo6);
-    text-align: center;
-    text-decoration: dotted underline var(--roxo6);
-    padding: 30px 0;
-}
 
 /*=== Seção contato ===*/
 
@@ -610,6 +566,10 @@ footer .rodapeSite .estrelaEnfeite {
         padding: 60px 90px;
     }
 
+    .cartaoProjeto {
+        width: 100%;
+    }
+
     #contato {
         padding: 60px 90px;
     }
@@ -766,6 +726,40 @@ footer .rodapeSite .estrelaEnfeite {
     .idiomas {
         padding: 0px 60px;
     }
+    
+    #portfolio .container {
+        margin: 30px 60px 0px 60px;
+        padding: 0;
+    }
 
+    #portfolio .cartoesFlex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 30px 90px 30px;
+    }
 
+    .cartaoProjeto {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        height: 400px;
+        transform: scale(0.9); 
+        transition: all 0.3s ease-in-out; 
+        cursor: pointer;
+    }
+
+    .cartaoProjeto:hover {
+        background-color: var(--roxo6);
+        transform: scale(1); 
+    }
+    
+    #contato p {
+        padding: 30px 120px;
+    }
+    
+    .containerContato {
+        width: 100%;
+        padding: 0 120px;
+    } 
 }
