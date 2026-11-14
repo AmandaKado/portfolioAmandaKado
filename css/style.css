@@ -370,7 +370,55 @@ main #sobre p {
     margin-right: 15px;
 }
 
+#btnPrev,#btnNext {
+    display: none;
+}
 
+.cartoesFlex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px 0;
+}
+
+.cartaoProjeto {
+    width: 100%;
+    max-width: 350px;
+    background-color: var(--roxo4);
+    border-radius: 10px 30px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.cartaoProjeto:hover {
+    transform: scale(1.05);
+    transition: transform 1.0s ease-in-out;
+    background-color: var(--roxo5);
+}
+
+.cartaoProjeto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 15px 0;
+} 
+
+.cartaoProjeto h3, .cartaoProjeto a {
+    font-size: 1.2em;
+    color: var(--roxo7);
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 0;
+}
+
+.cartaoProjeto p {
+    font-size: 1em;
+    color: var(--roxo8);
+    text-align: center;
+    padding: 15px 0;
+}
 
 /*=== Seção contato ===*/
 
