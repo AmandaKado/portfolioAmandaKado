@@ -18,7 +18,6 @@
     --textoComum: "Roboto Mono", monospace;
 }
 
-
 /*=== Configurações Mobile First ===*/
 
 /* Redefinindo margin, padding e box-sizing do site todo */
@@ -42,6 +41,15 @@ main {
 
 main span {
     font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+input, textarea, select {
+    max-width: 100%;
 }
 
 /* Configuração das fontes */
@@ -98,7 +106,6 @@ a#botaoVoltarAoTopo img {
     right: 25px;
     transition: background-color 0.3s ease-in-out;
 }
-
 
 /* Configuração de efeito FadeIn */
 .fadeInElemento {
@@ -295,6 +302,7 @@ main #sobre p {
 }
 
 #sobre p.textoSobre {
+    width: 100%;
     font-weight: normal;
     margin: 0 20px 60px 20px;
     text-align: left;
@@ -318,10 +326,17 @@ main #sobre p {
     justify-content: space-between;
 }
 
-.container .icone-titulo  {
+.container #educacaoIcone {
     width: 30px;
     height: auto;
     margin-right: 15px;
+}
+
+.containerEducacao {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
 }
 
 .cursos h3, .idiomas h3 {
@@ -332,33 +347,12 @@ main #sobre p {
     padding: 30px 0;
 }
 
-.idiomas h3 {
-    margin: 30px 0 0 0;
-}
-
 .cursos div, .idiomas div {
     background-color: var(--roxo4);
-    width: 100%;
-    height: 2px;
     margin: 15px auto;
 }
 
 /*=== Seção projetos ===*/
-
-#portfolio {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 30px;
-    background: linear-gradient(to bottom, var(--roxo1), var(--roxo2));
-    overflow: hidden; 
-}
-
-#portfolio h2 {
-    padding: 30px 0;
-    text-align: left;
-}
-
 
 
 /*=== Seção contato ===*/
