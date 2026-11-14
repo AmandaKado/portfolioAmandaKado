@@ -551,7 +551,7 @@ footer .rodapeSite .estrelaEnfeite {
 
 @media (min-width: 768px) and (max-width: 1199px) {
 
-
+/* GERAL */
     body #botaoVoltarAoTopo{
         width: 60px;
         height: 60px;
@@ -582,6 +582,9 @@ footer .rodapeSite .estrelaEnfeite {
         height: 60px;
     }
 
+
+    /* MENU */
+
     #menuHamburguer img, #fecharMenu img {
         width: 40px;
     }
@@ -589,6 +592,8 @@ footer .rodapeSite .estrelaEnfeite {
     ul li a {
         font-size: 1.8em;
     }
+
+    /* CONTEÚDO PRINCIPAL */
 
     main {
         margin-top: 30px;
@@ -613,6 +618,8 @@ footer .rodapeSite .estrelaEnfeite {
         padding: 60px 60px 0px 60px;
     }
 
+    /* EDUCACAO */
+
     #educacao {
         padding: 60px 90px;
     }
@@ -620,6 +627,8 @@ footer .rodapeSite .estrelaEnfeite {
     .container .icone-titulo  {
         width: 60px;
     }
+
+    /* PORTFOLIO */
 
     #portfolio {
         padding: 60px 90px;
@@ -629,6 +638,8 @@ footer .rodapeSite .estrelaEnfeite {
         width: 100%;
     }
 
+    /* CONTATO */
+
     #contato {
         padding: 60px 90px;
     }
@@ -637,6 +648,8 @@ footer .rodapeSite .estrelaEnfeite {
         width: 60px;
         margin: 60px 30px 0 30px;
     }
+
+    /* RODAPÉ */
 
     .rodapeSite {
         width: 100%;
