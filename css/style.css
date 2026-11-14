@@ -727,33 +727,6 @@ footer .rodapeSite .estrelaEnfeite {
         padding: 0px 60px;
     }
     
-    #portfolio .container {
-        margin: 30px 60px 0px 60px;
-        padding: 0;
-    }
-
-    #portfolio .cartoesFlex {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0px 30px 90px 30px;
-    }
-
-    .cartaoProjeto {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        height: 400px;
-        transform: scale(0.9); 
-        transition: all 0.3s ease-in-out; 
-        cursor: pointer;
-    }
-
-    .cartaoProjeto:hover {
-        background-color: var(--roxo6);
-        transform: scale(1); 
-    }
-    
     #contato p {
         padding: 30px 120px;
     }
